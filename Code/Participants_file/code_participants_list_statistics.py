@@ -6,6 +6,21 @@ __maintainer__ = "Jorge Samper Gonzalez"
 __email__ = "jorge.samper-gonzalez@inria.fr"
 __status__ = "Development"
 
+'''
+Example: 
+Function you need to run in order to obtain all the subjects list necessary to reproduce the paper:
+
+subjects_with_pet, subjects_with_t1 = create_subjects_lists(path_bids)
+[MCI_CN, MCI_AD_MCI] = create_diagnosis_all_participants(path_bids, subjects_list, output_path)
+[global_list, global_list_name] = obtain_global_list(output_path, subjects_list, N_months = 36)
+dict = find_parameters_statistics(path_bids, subjects_list, output_path, database)
+statistics_cn_ad_mci_M00(global_list, global_list_name, dict)
+statistics_cn_ad_mci_amylod_M00(adnimerge, output_path, global_list, global_list_name)
+obtain_lists_single_diagnosis(output_path)
+obtain_lists_single_diagnosis(output_path)
+
+'''
+
 
 def max_vis(mylist):
     maxi = 0
