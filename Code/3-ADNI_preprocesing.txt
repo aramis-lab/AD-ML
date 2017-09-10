@@ -1,0 +1,2 @@
+clinica run t1-spm-full-prep /ADNI/BIDS /ADNI/CAPS/ ADNIbl -tsv /SUBJECTS_DIR/subjects_T1.tsv -wd /WORKING/DIR -np 72
+clinica run pet-preprocess-volume /ADNI/BIDS /ADNI/CAPS/ ADNIbl -tsv /SUBJECTS_DIR/subjects_T1_PET.tsv -wd /WORKING/DIR -np 72
