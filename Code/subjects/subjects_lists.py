@@ -14,6 +14,52 @@ to run the classification tasks.
 '''
 
 
+def run_subjects_lists(path_bids, output_path, database, subjects_list, adnimerge):
+    '''
+
+    :param path_bids: path to the  dataset in bids (it works with ADNI, AIBL and OASIS)
+    :param output_path: where lists will be saved
+    :param subjects_list: is a flag ("T1" or "PET"): it depends on which list we need, if you select PET, participant_id will contain also patient which have a T1
+    :param adnimerge: ADNIMERGE.csv (for ADNI)
+
+    If you run this function you can create all the lists you need for the statistics on the population and for the classification. 
+
+    Example:
+
+    run_subjects_lists('/Users/ADNI_BIDS', '/Users/lists_ADNI', 'ADNI', 'PET')
+
+
+    '''
+
+    from Code.subjects.subjects_lists import max_vis, create_subjects_lists, create_diagnosis_all_participants, \
+        obtain_global_list, find_parameters_statistics, obtain_lists_diagnosis, obtain_lists_diagnosis_amyloid, \
+        parameters_cn_ad_mci_amylod_M00
+    import os
+    import pandas as pd
+
+    create_subjects_lists(path_bids, output_path, database)
+
+    if subjects_list == 'T1':
+        subjects_list = pd.io.parsers.read_csv(os.path.join(output_path, 'list_T1_' + database + '.tsv'), sep='\t')
+        subjects_list = subjects_list.participant_id
+    else:
+        subjects_list = pd.io.parsers.read_csv(os.path.join(output_path, 'list_T1_' + database + '.tsv'), sep='\t')
+        subjects_list = subjects_list.participant_id
+
+    [MCI_CN, MCI_AD_MCI] = create_diagnosis_all_participants(path_bids, subjects_list, output_path, database)
+    [global_list, global_list_name] = obtain_global_list(output_path, database, MCI_CN, MCI_AD_MCI, N_months=36)
+
+    find_parameters_statistics(path_bids, subjects_list, output_path, database)
+    obtain_lists_diagnosis(output_path, database, N_months=36)
+
+
+    if database == 'ADNI':
+        parameters_cn_ad_mci_amylod_M00(adnimerge, output_path, global_list, global_list_name)
+        obtain_lists_diagnosis_amyloid(output_path)
+
+
+
+
 def max_vis(mylist):
     maxi = 0
     for e in range(len(mylist)):
@@ -600,3 +646,5 @@ def obtain_lists_diagnosis_amyloid(output_path):
                                  })
         list_tsv.to_csv(os.path.join(output_path, 'tasks_ADNI_' + names[r]), sep='\t', index=False, encoding='utf8',
                         columns=['participant_id', 'session_id'])
+
+

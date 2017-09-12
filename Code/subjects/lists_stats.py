@@ -12,6 +12,47 @@ This function contains all the method to compute the statistics of the populatio
 '''
 
 
+def run_lists_stats(path_bids, output_path, database, subjects_list, adnimerge):
+    '''
+
+    :param path_bids: path to the  dataset in bids (it works with ADNI, AIBL and OASIS)
+    :param output_path: where lists will be saved
+    :param subjects_list: is a flag ("T1" or "PET"): it depends on which list we need, if you select PET, participant_id will contain also patient which have a T1
+    :param adnimerge: ADNIMERGE.csv (for ADNI)
+
+    If you run this function you can see all the statistics in the command line
+
+    Example:
+
+    run_lists_stats('/Users/ADNI_BIDS', '/Users/lists_ADNI', 'ADNI', 'PET')
+
+
+    '''
+
+    from Code.subjects.lists_stats import statistics_cn_ad_mci_M00, statistics_cn_ad_mci_amylod_M00
+    from Code.subjects.subjects_lists import run_subjects_lists, create_diagnosis_all_participants, obtain_global_list
+
+    import pandas as pd
+    import os
+
+    run_subjects_lists(path_bids, output_path, database, subjects_list, adnimerge)
+
+    if subjects_list == 'T1':
+        subjects_list = pd.io.parsers.read_csv(os.path.join(output_path, 'list_T1_' + database + '.tsv'), sep='\t')
+        subjects_list = subjects_list.participant_id
+    else:
+        subjects_list = pd.io.parsers.read_csv(os.path.join(output_path, 'list_T1_' + database + '.tsv'), sep='\t')
+        subjects_list = subjects_list.participant_id
+
+    [MCI_CN, MCI_AD_MCI] = create_diagnosis_all_participants(path_bids, subjects_list, output_path, database)
+    [global_list, global_list_name] = obtain_global_list(output_path, database, MCI_CN, MCI_AD_MCI, N_months=36)
+
+    statistics_cn_ad_mci_M00(output_path, database, global_list, global_list_name)
+
+    if database == 'ADNI':
+        statistics_cn_ad_mci_amylod_M00(adnimerge, output_path, global_list, global_list_name)
+
+
 def statistics_cn_ad_mci_M00(output_path, database, global_list, global_list_name):
     '''
     :param output_path: where files with lists have been saved
