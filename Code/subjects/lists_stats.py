@@ -131,7 +131,6 @@ def statistics_cn_ad_mci_amylod_M00(path_bids, output_path):
     import os
     import pandas as pd
     import numpy as np
-    path_bids = '/Volumes/aramis-projects/simona.bottani/ADNI_Clinical_Data/'
     diagnosis = ['AD-', 'AD+', 'CN-', 'CN+', 'MCI-', 'MCI+', 'pMCI+', 'pMCI-', 'sMCI+', 'sMCI-']
     participants_tsv = pd.io.parsers.read_csv(os.path.join(path_bids, 'participants.tsv'), sep='\t')
     for i in diagnosis:
