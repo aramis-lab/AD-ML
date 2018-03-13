@@ -8,7 +8,7 @@ __status__ = "Development"
 
 '''
 
-This function contains all the method to create the lists you need for the statistics and you can also use these lists 
+This function contains all the methods to create the lists you need for the statistics and you can also use these lists 
 to run the classification tasks.
 
 '''
@@ -43,14 +43,15 @@ def run_subjects_lists(path_bids, output_path, database, subjects_list, adnimerg
         subjects_list = pd.io.parsers.read_csv(os.path.join(output_path, 'list_T1_' + database + '.tsv'), sep='\t')
         subjects_list = subjects_list.participant_id
     else:
-        subjects_list = pd.io.parsers.read_csv(os.path.join(output_path, 'list_T1_' + database + '.tsv'), sep='\t')
+        subjects_list = pd.io.parsers.read_csv(os.path.join(output_path, 'list_PET_' + database + '.tsv'), sep='\t')
         subjects_list = subjects_list.participant_id
+
 
     [MCI_CN, MCI_AD_MCI] = create_diagnosis_all_participants(path_bids, subjects_list, output_path, database)
     [global_list, global_list_name] = obtain_global_list(output_path, database, MCI_CN, MCI_AD_MCI, N_months=36)
 
     find_parameters_statistics(path_bids, subjects_list, output_path, database)
-    obtain_lists_diagnosis(output_path, database, N_months=36)
+    obtain_lists_diagnosis(path_bids, output_path, database, N_months = 36)
 
 
     if database == 'ADNI':
@@ -79,12 +80,12 @@ def create_subjects_lists(path_bids, output_path, database):
 
     # path to the  bids folder
     import os
-    import numpy as np
     import pandas as pd
 
     # read the participants.tsv file in ADNI
-    all_subjects = pd.io.parsers.read_csv(os.path.join(path_bids, 'participants.tsv'), sep='\t')
-    all_subjects = all_subjects.participant_id
+    participants_tsv = pd.io.parsers.read_csv(os.path.join(path_bids, 'participants.tsv'), sep='\t')
+    all_subjects = participants_tsv[participants_tsv.diagnosis_bl != 'SMC'].participant_id
+    all_subjects= all_subjects.unique()
     sublist = all_subjects.tolist()
     subjects_with_t1 = []
     subjects_with_pet = []
@@ -94,33 +95,18 @@ def create_subjects_lists(path_bids, output_path, database):
         del sublist[idx]
     for sub in range(len(sublist)):
 
-        # read the session.tsv for each subject
-        if os.path.isfile(os.path.join(path_bids, sublist[sub], sublist[sub] + '_sessions.tsv')):
-            read_session = pd.io.parsers.read_csv(
-                os.path.join(path_bids, sublist[sub], sublist[sub] + '_sessions.tsv'), sep='\t')
-
-            if os.path.exists(os.path.join(path_bids, sublist[sub], 'ses-M00')):
-
-                folder_in_bl = os.listdir(os.path.join(path_bids, sublist[sub], 'ses-M00'))
-
-                has_anat = len([i for i in range(len(folder_in_bl)) if folder_in_bl[i] == 'anat']) == 1
-
-                has_pet = len([i for i in range(len(folder_in_bl)) if folder_in_bl[i] == 'pet']) == 1
-
-                if not has_anat:
-                    print(
-                        sublist[
-                            sub] + ' does not have a anat folder for its T1-MRI in ses-M00 folder. Subject dissmissed')
-                else:
-                    if os.path.isfile(os.path.join(path_bids, sublist[sub], 'ses-M00', 'anat',
+        if os.path.isfile(os.path.join(path_bids, sublist[sub], 'ses-M00', 'anat',
                                                    sublist[sub] + '_ses-M00_T1w.nii.gz')):
 
-                        subjects_with_t1.append(sublist[sub])
+            subjects_with_t1.append(sublist[sub])
 
                         # we consider only the subjects with t1 in the PET list
-                        if os.path.isfile(os.path.join(path_bids, sublist[sub], 'ses-M00', 'pet',
+            if os.path.isfile(os.path.join(path_bids, sublist[sub], 'ses-M00', 'pet',
                                                        sublist[sub] + '_ses-M00_task-rest_acq-fdg_pet.nii.gz')):
-                            subjects_with_pet.append(sublist[sub])
+                    subjects_with_pet.append(sublist[sub])
+
+
+
     list_T1 = pd.DataFrame({'participant_id': subjects_with_t1,
                             'session_id': 'ses-M00'
                             })
@@ -134,7 +120,7 @@ def create_subjects_lists(path_bids, output_path, database):
     list_PET.to_csv(os.path.join(output_path, 'list_PET_' + database + '.tsv'), sep='\t', index=False,
                     encoding='utf8', columns=['participant_id', 'session_id'])
 
-    return subjects_with_pet, subjects_with_t1
+    #return subjects_with_pet, subjects_with_t1
 
 
 def create_diagnosis_all_participants(path_bids, subjects_list, output_path, database):
@@ -352,6 +338,7 @@ def find_parameters_statistics(path_bids, subjects_list, output_path, database):
     all_diagnosis = []
     all_date = []
     all_mmscore = []
+    all_cdrscore = []
     for i in subjects_list:
         # for each patient used in the subjects_list for the paper
         session_file = os.path.join(path_bids, i, i + '_sessions.tsv')
@@ -369,9 +356,11 @@ def find_parameters_statistics(path_bids, subjects_list, output_path, database):
         index = session_file_read.session_id[session_file_read.session_id == 'ses-M00'].index.tolist()
         index = index[0]
         diagnosis = session_file_read.diagnosis[index]
+        cdrscore = session_file_read.cdr_global[index]
+        mmscore = session_file_read.MMS[index]
 
         if database == 'AIBL':
-            mmscore = session_file_read.MMS[index]
+            #mmscore = session_file_read.MMS[index]
             if i != 'sub-AIBL1503':
                 date_bl = session_file_read.examination_date[0]
                 # if date_bl!=-4:
@@ -380,12 +369,15 @@ def find_parameters_statistics(path_bids, subjects_list, output_path, database):
                 year_bl = 2014
             dob = participants.loc[(participants["participant_id"] == i), 'date_of_birth']
             age = int(int(year_bl) - dob)  # age at M00
+        elif database == 'OASIS':
+            age = participants.age_bl[index_gender]
         else:
             age = session_file_read.age[index]
-            mmscore = session_file_read.mmse[index]
+
         all_date.append(age)
         all_gender.append(gender)  # gender
         all_mmscore.append(mmscore)  # mmscore at M00
+        all_cdrscore.append(cdrscore) #cdr score at M00
         all_diagnosis.append(diagnosis)  # diagnosis at M00
     all_sex = []
     for j in xrange(len(all_gender)):
@@ -398,11 +390,13 @@ def find_parameters_statistics(path_bids, subjects_list, output_path, database):
                          'sex': all_sex,
                          'age': all_date,
                          'diagnosis': all_diagnosis,
-                         'mmscore': all_mmscore
+                         'mmscore': all_mmscore,
+                         'cdr': all_cdrscore
+                        
                          })
     dict.to_csv(os.path.join(output_path, 'participants_parameters_for_statistics' + '_' + database + '.tsv'), sep='\t',
                 index=False, encoding='utf8',
-                columns=['participant_id', 'sex', 'age', 'diagnosis', 'mmscore'])
+                columns=['participant_id', 'sex', 'age', 'diagnosis', 'mmscore', 'cdr'])
 
     return dict
 
@@ -426,39 +420,27 @@ def parameters_cn_ad_mci_amylod_M00(adnimerge, output_path, global_list, global_
     import re
 
     participants = pd.io.parsers.read_csv(adnimerge, sep=';')
+    if len(participants.columns) == 1:
+        participants = pd.io.parsers.read_csv(adnimerge, sep=',')
     N_months = 36
     sub_study = os.path.join(output_path, 'diagnosis_' + str(N_months) + '_ADNI.tsv')
     sub_parsed = pd.io.parsers.read_csv(sub_study, sep='\t')
     participant_id = list(participants.PTID)
     vis = list(participants.VISCODE)
-    sex = np.asarray(list(participants.PTGENDER))
-    age = np.asarray(list(participants.AGE))
-    mmse = np.asarray(list(participants.MMSE))
+
 
     av45 = np.asarray(list(participants.AV45))
     pib = np.asarray(list(participants.PIB))
 
-    # list of subjects from the previous method
     sub_36 = list(sub_parsed.participant_id)
     diag_36 = list(sub_parsed.diagnosis)
     all_subjects = []
     all_diagnosis = []
 
     for li in range(len(global_list)):
-        age_bl = []
-        sex_bl = []
-        mmse_bl = []
 
         am_negatif = []
         am_positif = []
-
-        am_age_p = []
-        am_sex_p = []
-        am_mmse_p = []
-
-        am_age_n = []
-        am_sex_n = []
-        am_mmse_n = []
 
         # statistics for the subjects which have got also information about the amyloid status
         for sub in global_list[li]:
@@ -474,26 +456,18 @@ def parameters_cn_ad_mci_amylod_M00(adnimerge, output_path, global_list, global_
                         diag_string = 'pMCI'
                     elif diag_string == 'MCInc':
                         diag_string = 'sMCI'
-                    age_bl.append(age[ses])
-                    sex_bl.append(sex[ses])
-                    mmse_bl.append(mmse[ses])
+
                     if not (np.isnan(av45[ses]) and np.isnan(pib[ses])) and participant_id[ses] != '126_S_2360':
                         if not np.isnan(av45[ses]):
 
                             # threshold to classifify patients as amyloid positive or negative
                             if av45[ses] <= 1.10:
                                 am_negatif.append(participant_id[ses])
-                                am_age_n.append(age[ses])
-                                am_sex_n.append(sex[ses])
-                                am_mmse_n.append(mmse[ses])
                                 all_subjects.append(
                                     'sub-ADNI' + participant_id[ses][0:3] + 'S' + participant_id[ses][6:])
                                 all_diagnosis.append(diag_string + '-')
                             elif av45[ses] > 1.10:
                                 am_positif.append(participant_id[ses])
-                                am_age_p.append(age[ses])
-                                am_sex_p.append(sex[ses])
-                                am_mmse_p.append(mmse[ses])
                                 all_subjects.append(
                                     'sub-ADNI' + participant_id[ses][0:3] + 'S' + participant_id[ses][6:])
                                 all_diagnosis.append(diag_string + '+')
@@ -503,17 +477,11 @@ def parameters_cn_ad_mci_amylod_M00(adnimerge, output_path, global_list, global_
                         elif not np.isnan(pib[ses]):
                             if pib[ses] <= 1.47:
                                 am_negatif.append(participant_id[ses])
-                                am_age_n.append(age[ses])
-                                am_sex_n.append(sex[ses])
-                                am_mmse_n.append(mmse[ses])
                                 all_subjects.append(
                                     'sub-ADNI' + participant_id[ses][0:3] + 'S' + participant_id[ses][6:])
                                 all_diagnosis.append(diag_string + '-')
                             elif pib[ses] > 1.47:
                                 am_positif.append(participant_id[ses])
-                                am_age_p.append(age[ses])
-                                am_sex_p.append(sex[ses])
-                                am_mmse_p.append(mmse[ses])
                                 all_subjects.append(
                                     'sub-ADNI' + participant_id[ses][0:3] + 'S' + participant_id[ses][6:])
                                 all_diagnosis.append(diag_string + '+')
@@ -524,11 +492,12 @@ def parameters_cn_ad_mci_amylod_M00(adnimerge, output_path, global_list, global_
     dict = pd.DataFrame({'participant_id': all_subjects,
                          'diagnosis': all_diagnosis
                          })
+    dict = dict.drop_duplicates()
     dict.to_csv(os.path.join(output_path, 'amyloid_ADNI.tsv'), sep='\t', index=False, encoding='utf8',
                 columns=['participant_id', 'diagnosis'])
 
 
-def obtain_lists_diagnosis(output_path, database, N_months=36):
+def obtain_lists_diagnosis(path_bids,output_path, database, N_months = 36):
     '''
     :param output_path: 
     it's necessary the file with the diagnosis!
@@ -548,25 +517,31 @@ def obtain_lists_diagnosis(output_path, database, N_months=36):
 
     dx = pd.io.parsers.read_csv(diagnosis_list, sep='\t')
     d = defaultdict(list)
+    if database == 'OASIS':
+        participants_tsv = pd.io.parsers.read_csv(os.path.join(path_bids, 'participants.tsv'), sep='\t').drop(
+            'alternative_id_1', 1).drop_duplicates()
     for i in xrange(len(dx.participant_id)):
+        if database == 'OASIS' and participants_tsv[participants_tsv.participant_id == dx.participant_id[i]].age_bl.item()<61:
+                break
+        else:
 
-        diagnosis = dx.loc[(dx["participant_id"] == dx.participant_id[i]), "diagnosis"]
+            diagnosis = dx.loc[(dx["participant_id"] == dx.participant_id[i]), "diagnosis"]
 
-        if diagnosis[i] == "AD":
-            d["AD"].append(dx.participant_id[i])
-        if diagnosis[i] == "CN":
-            d["CN"].append(dx.participant_id[i])
-        if diagnosis[i] == "pMCI":
-            d["pMCI"].append(dx.participant_id[i])
-            d["MCI"].append(dx.participant_id[i])
-        if diagnosis[i] == "sMCI":
-            d["sMCI"].append(dx.participant_id[i])
-            d["MCI"].append(dx.participant_id[i])
-        if diagnosis[i] == "uMCI":
-            d["uMCI"].append(dx.participant_id[i])
-            d["MCI"].append(dx.participant_id[i])
+            if diagnosis[i] == "AD":
+                d["AD"].append(dx.participant_id[i])
+            if diagnosis[i] == "CN":
+                d["CN"].append(dx.participant_id[i])
+            if diagnosis[i] == "pMCI":
+                d["pMCI"].append(dx.participant_id[i])
+                d["MCI"].append(dx.participant_id[i])
+            if diagnosis[i] == "sMCI":
+                d["sMCI"].append(dx.participant_id[i])
+                d["MCI"].append(dx.participant_id[i])
+            if diagnosis[i] == "uMCI":
+                d["uMCI"].append(dx.participant_id[i])
+                d["MCI"].append(dx.participant_id[i])
 
-    names = ['AD', 'CN', 'pMCI.tsv', 'MCI', 'sMCI.tsv', 'uMCI.tsv']
+    names = ['AD', 'CN', 'pMCI', 'MCI', 'sMCI', 'uMCI']
     session_id = 'ses-M00'
 
     for r in range(len(d)):
@@ -574,7 +549,7 @@ def obtain_lists_diagnosis(output_path, database, N_months=36):
         list_tsv = pd.DataFrame({'participant_id': d[names[r]],
                                  'session_id': session_id
                                  })
-        list_tsv.to_csv(os.path.join(output_path, 'tasks_' + database + '_' + names[r]), sep='\t', index=False,
+        list_tsv.to_csv(os.path.join(output_path, 'tasks_' + database + '_' + names[r] +'.tsv'), sep='\t', index=False,
                         encoding='utf8',
                         columns=['participant_id', 'session_id'])
 
@@ -635,8 +610,8 @@ def obtain_lists_diagnosis_amyloid(output_path):
             if diagnosis_am[index] == "uMCI+":
                 d["MCI+"].append(dx.participant_id[i])
 
-    names = ['AD+.tsv', 'AD-.tsv', 'CN+.tsv', 'CN-.tsv', 'pMCI-.tsv', 'pMCI+.tsv', 'MCI+.tsv',
-             'MCI-.tsv', 'sMCI.tsv', 'sMCI-.tsv', 'sMCI+.tsv', ]
+    names = ['AD+', 'AD-', 'CN+', 'CN-', 'pMCI-', 'pMCI+', 'MCI+',
+             'MCI-', 'sMCI-', 'sMCI+', ]
     session_id = 'ses-M00'
 
     for r in range(len(d)):
@@ -644,7 +619,7 @@ def obtain_lists_diagnosis_amyloid(output_path):
         list_tsv = pd.DataFrame({'participant_id': d[names[r]],
                                  'session_id': session_id
                                  })
-        list_tsv.to_csv(os.path.join(output_path, 'tasks_ADNI_' + names[r]), sep='\t', index=False, encoding='utf8',
+        list_tsv.to_csv(os.path.join(output_path, 'tasks_ADNI_' + names[r] + '.tsv'), sep='\t', index=False, encoding='utf8',
                         columns=['participant_id', 'session_id'])
 
 
