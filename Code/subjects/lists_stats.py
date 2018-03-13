@@ -97,9 +97,7 @@ def statistics_cn_ad_mci_M00(output_path, database, global_list, global_list_nam
 
         mmse_m = np.mean(np.asarray(mmse_bl))
         mmse_u = np.std(np.asarray(mmse_bl))
-        
-        cdr_m = np.mean(np.asarray(cdr_bl))
-        cdr_u = np.std(np.asarray(cdr_bl))
+
 
         N_women = len([i for i in range(len(age_bl)) if sex_bl[i] == 'F'])
         N_men = len([i for i in range(len(age_bl)) if sex_bl[i] == 'M'])
@@ -110,8 +108,9 @@ def statistics_cn_ad_mci_M00(output_path, database, global_list, global_list_nam
         print ('N male = ' + str(N_men) + ' N female = ' + str(N_women))
         print ('MMSE = ' + str(mmse_m) + ' +/- ' + str(mmse_u) + ' and range = ' + str(
             np.min(np.asarray(mmse_bl))) + ' / ' + str(np.max(np.asarray(mmse_bl))))
-        print ('CDR = ' + str(cdr_m) + ' +/- ' + str(cdr_u) + ' and range = ' + str(
-            np.min(np.asarray(cdr_bl))) + ' / ' + str(np.max(np.asarray(cdr_bl))))
+        print ('CDR:' + str(cdr_bl.count(0)) + '(0); ' + str(cdr_bl.count(0.5)) + '(0.5); ' + str(
+            cdr_bl.count(1)) + '(1); ' + str(cdr_bl.count(2)) + '(2); ')
+
 
 def statistics_cn_ad_mci_amylod_M00(path_bids, output_path):
 
@@ -151,8 +150,6 @@ def statistics_cn_ad_mci_amylod_M00(path_bids, output_path):
         age_u = np.std(np.asarray(age))
         mmse_m = np.mean(np.asarray(mmse))
         mmse_u = np.std(np.asarray(mmse))
-        cdr_m = np.mean(np.asarray(cdr))
-        cdr_u = np.std(np.asarray(cdr))
 
         N_women = len([x for x in range(len(age)) if sex[x] == 'F'])
         N_men = len([x for x in range(len(age)) if sex[x] == 'M'])
@@ -166,8 +163,9 @@ def statistics_cn_ad_mci_amylod_M00(path_bids, output_path):
         'MMSE = ' + str(mmse_m) + ' +/- ' + str(mmse_u) + ' range ' + str(np.min(np.asarray(mmse))) + ' / ' + str(
             np.max(np.asarray(mmse))))
 
-        print ('CDR = ' + str(cdr_m) + ' +/- ' + str(cdr_u) + ' RANGE ' + str(np.min(np.asarray(cdr))) + ' / ' + str(
-            np.max(np.asarray(cdr))))
+        print ('CDR:' + str(cdr.count(0)) + '(0); ' + str(cdr.count(0.5)) + '(0.5); ' + str(
+            cdr.count(1)) + '(1); ' + str(cdr.count(2)) + '(2); ')
+
 
 
 
