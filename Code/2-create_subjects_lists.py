@@ -12,4 +12,3 @@ adni_bids = 'PATH/TO/ADNI/BIDS'
 subjects_path = 'PATH/TO/SUBJECTS'
 
 run_subjects_lists(path_bids, output_path, database, subjects_list, adnimerge)
-

@@ -9,4 +9,3 @@ subjects_list = 'T1' #T1 or PET if ADNI
 adnimerge = 'PATH/TO/ADNIMERGE.csv' #if ADNI
 
 stat.run_lists_stats(path_bids, output_path, database, subjects_list, adnimerge)
-

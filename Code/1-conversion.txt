@@ -1,6 +1,5 @@
-#conversion of ADNI / AIBL / OASIS in BIDS format
+### Conversion of ADNI / AIBL / OASIS in BIDS format
 
-
-clinica convert adni-to-bids 'PATH/TO/ADNI/IMAGES' 'PATH/TO/ADNI/CLINICAL_DATA' 'OUTPUT/PATH/TO/ADNI/BIDS'
+clinica convert adni-to-bids 'PATH/TO/ADNI/IMAGES' 'PATH/TO/ADNI/CLINICAL_DATA' 'OUTPUT/PATH/TO/ADNI/BIDS' -m T1 PET_FDG
 clinica convert aibl-to-bids 'PATH/TO/AIBL/IMAGES' 'PATH/TO/AIBL/CLINICAL_DATA' 'OUTPUT/PATH/TO/AIBL/BIDS'
 clinica convert oasis-to-bids 'PATH/TO/OASIS/IMAGES' 'PATH/TO/OASIS/CLINICAL_DATA' 'OUTPUT/PATH/TO/OASIS/BIDS'

@@ -1,0 +1,20 @@
+### Run preprocessing of images
+
+clinica run t1-spm-full-prep /ADNI/BIDS /ADNI/CAPS/ ADNIbl -tsv /SUBJECTS_DIR/subjects_T1_PET.tsv -wd /WORKING/DIR -np 8
+
+clinica run pet-preprocess-volume /ADNI/BIDS /ADNI/CAPS/ ADNIbl -tsv /SUBJECTS_DIR/subjects_T1_PET.tsv -wd /WORKING/DIR -np 8
+
+clinica run t1-spm-full-prep /AIBL/BIDS /AIBL/CAPS/ AIBLbl -tsv /SUBJECTS_DIR/subjects_T1.tsv -wd /WORKING/DIR -np 8
+
+clinica run t1-spm-full-prep /OASIS/BIDS /OASIS/CAPS/ OASISbl -tsv /SUBJECTS_DIR/subjects_T1.tsv -wd /WORKING/DIR -np 8
+
+
+### AIBL and OASIS are registered into ADNI template to later test ADNI trained classifiers on AIBL and OASIS
+
+clinica run t1-spm-dartel-existing-template /AIBL/BIDS /AIBL/CAPS/ ADNIbl -tsv /SUBJECTS_DIR/subjects_T1.tsv -wd /WORKING/DIR -np 8
+
+clinica run t1-spm-dartel-existing-template /OASIS/BIDS /OASIS/CAPS/ ADNIbl -tsv /SUBJECTS_DIR/subjects_T1.tsv -wd /WORKING/DIR -np 8
+
+clinica run t1-spm-dartel2mni /AIBL/BIDS /AIBL/CAPS/ AIBLbl -tsv /SUBJECTS_DIR/subjects_T1.tsv -wd /WORKING/DIR -np 8
+
+clinica run t1-spm-dartel2mni /OASIS/BIDS /OASIS/CAPS/ OASISbl -tsv /SUBJECTS_DIR/subjects_T1.tsv -wd /WORKING/DIR -np 8
