@@ -8,4 +8,8 @@ This code relies heavily on the [Clinica software platform](http://www.clinica.r
 
 The documentation is available at: https://gitlab.icm-institute.org/aramislab/AD-ML/wikis/home
 
-This present work extends that presented in: 
+The present work extends that presented in: 
+> J. Samper-Gonzalez, N. Burgos, S. Fontanella, H. Bertin, M.-O. Habert, S. Durrleman, T. Evgeniou and O. Colliot, **Yet Another ADNI Machine Learning Paper? Paving The Way Towards Fully-reproducible Research on Classification of Alzheimer's Disease**. MLMI MICCAI Workshop, Machine Learning in Medical Imaging 2017, Québec City, Canada - [Paper in PDF](Papers/MLMI2017/MLMI-2017-Paper_12.pdf) - [Supplementary material](Papers/MLMI2017/supplementary_material.pdf)
+>
+
+The code to reproduce the experiments of that previous workshop paper is available under "Legacy MLMI"/
