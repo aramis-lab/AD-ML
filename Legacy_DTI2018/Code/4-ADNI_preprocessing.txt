@@ -1,0 +1,9 @@
+## Preprocessing for T1w MRI
+clinica run t1-spm-full-prep /ADNI/BIDS /ADNI/CAPS/ ADNIbl -tsv /SUBJECTS_DIR/subjects_T1.tsv -wd /WORKING/DIR -np 72
+
+## Preprocessing for diffusion MRI
+clinica run dwi-preprocessing-using-t1 /ADNI/BIDS /ADNI/CAPS/ -tsv /SUBJECTS_DIR/subjects_diffusion.tsv -wd /WORKING/DIR -np 72
+clinica run dwi-processing-dti /ADNI/CAPS/ -tsv /SUBJECTS_DIR/subjects_diffusion.tsv -wd /WORKING/DIR -np 72
+
+
+
