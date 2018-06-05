@@ -107,7 +107,7 @@ def statistics_cn_ad_mci_M00(output_path, database, global_list, global_list_nam
             age_u) + ' and range = ' + str(np.min(np.asarray(age_bl))) + ' / ' + str(np.max(np.asarray(age_bl))))
         print ('N male = ' + str(N_men) + ' N female = ' + str(N_women))
         print ('MMSE = ' + str(mmse_m) + ' +/- ' + str(mmse_u) + ' and range = ' + str(
-            np.min(np.asarray(mmse_bl))) + ' / ' + str(np.max(np.asarray(mmse_bl))))
+            np.min(np.asarray(mmse_bl))) + ' / ' + str(np.max(np .asarray(mmse_bl))))
         print ('CDR:' + str(cdr_bl.count(0)) + '(0); ' + str(cdr_bl.count(0.5)) + '(0.5); ' + str(
             cdr_bl.count(1)) + '(1); ' + str(cdr_bl.count(2)) + '(2); ')
 
