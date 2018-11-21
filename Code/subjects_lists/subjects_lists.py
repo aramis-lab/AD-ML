@@ -8,7 +8,7 @@ __status__ = "Development"
 
 '''
 
-This function contains all the methods to create the lists you need for the statistics and you can also use these lists 
+This function contains all the methods to create the lists you need for the statistics and you can also use these lists
 to run the classification tasks.
 
 '''
@@ -22,7 +22,7 @@ def run_subjects_lists(path_bids, output_path, database, subjects_list, adnimerg
     :param subjects_list: is a flag ("T1" or "PET"): it depends on which list we need, if you select PET, participant_id will contain also patient which have a T1
     :param adnimerge: ADNIMERGE.csv (for ADNI)
 
-    If you run this function you can create all the lists you need for the statistics on the population and for the classification. 
+    If you run this function you can create all the lists you need for the statistics on the population and for the classification.
 
     Example:
 
@@ -131,7 +131,7 @@ def create_diagnosis_all_participants(path_bids, subjects_list, output_path, dat
     :param database: name of the database we using
     :return: it returns a dataframe where for each patient of the subject list the corresponding diagnosis at the bl is reported
 
-    if we want the diagnosis for all the participants with T1 we should reported the subjects_list_with_t1 from the funcion 
+    if we want the diagnosis for all the participants with T1 we should reported the subjects_list_with_t1 from the funcion
     create_subjects_list, otherwise the subjects_list_with_pet always from the same function. If you want to discard some subjects you can change to_remove = True
 
     '''
@@ -278,7 +278,7 @@ def obtain_global_list(output_path, database, MCI_CN, MCI_AD_MCI, N_months=36):
     :param database: name of the database (ex: "ADNI")
     :param MCI_CN: list of subject derived from create_diagnosis_all_participants
     :param MCI_AD_MCI: list of subject derived from create_diagnosis_all_participants
-    :return: it returns the lists of subject for each diagnosis 
+    :return: it returns the lists of subject for each diagnosis
 
     At the end we obtain for each diagnosis a list of the corresponding patients It starts reading the file saved in the previous function
 
@@ -392,7 +392,7 @@ def find_parameters_statistics(path_bids, subjects_list, output_path, database):
                          'diagnosis': all_diagnosis,
                          'mmscore': all_mmscore,
                          'cdr': all_cdrscore
-                        
+
                          })
     dict.to_csv(os.path.join(output_path, 'participants_parameters_for_statistics' + '_' + database + '.tsv'), sep='\t',
                 index=False, encoding='utf8',
@@ -499,7 +499,7 @@ def parameters_cn_ad_mci_amylod_M00(adnimerge, output_path, global_list, global_
 
 def obtain_lists_diagnosis(path_bids,output_path, database, N_months = 36):
     '''
-    :param output_path: 
+    :param output_path:
     it's necessary the file with the diagnosis!
     :return: in the output_path it saves a tsv file for each diagnosis with the different list of patients. In this method amyloid status is not considered
 
@@ -556,11 +556,11 @@ def obtain_lists_diagnosis(path_bids,output_path, database, N_months = 36):
 
 def obtain_lists_diagnosis_amyloid(output_path):
     '''
-    :param output_path: 
+    :param output_path:
     it's necessary the file with the amyloid status and the diagnosis_list!
     :return: in the output_path it saves a tsv file for each diagnosis with the different list of patients. In this method amyloid status is not considered
     This method is only for ADNI since it contains information to identify the amiloyid status for the patients
-    
+
     This method can be useful when we want to use the machine learning algorithm to make the diagnosis file and to understand which classification can be done
 
     '''
@@ -621,5 +621,3 @@ def obtain_lists_diagnosis_amyloid(output_path):
                                  })
         list_tsv.to_csv(os.path.join(output_path, 'tasks_ADNI_' + names[r] + '.tsv'), sep='\t', index=False, encoding='utf8',
                         columns=['participant_id', 'session_id'])
-
-

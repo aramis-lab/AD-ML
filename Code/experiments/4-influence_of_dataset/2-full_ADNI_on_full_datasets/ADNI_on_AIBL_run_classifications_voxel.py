@@ -12,29 +12,21 @@ import clinica.pipelines.machine_learning.voxel_based_io as vbio
 from sklearn.metrics import roc_auc_score
 
 
-caps_dir = '/teams/ARAMIS/PROJECTS/CLINICA/CLINICA_datasets/CAPS/CAPS_AIBL'
-adni_caps_dir = '/teams/ARAMIS/PROJECTS/CLINICA/CLINICA_datasets/CAPS/CAPS_ADNI'
+caps_dir = '/AIBL/CAPS'
+adni_caps_dir = '/ADNI/CAPS'
 
-adni_output_dir = '/teams/ARAMIS/PROJECTS/simona.bottani/ADML_paper/ADNI/outputs'
-output_dir = '/teams/ARAMIS/PROJECTS/simona.bottani/ADML_paper/AIBL/ADNI_test'
+adni_output_dir = '/ADNI/CLASSIFICATION/OUTPUTS'
+output_dir = '/AIBL/CLASSIFICATION/OUTPUTS'
 
 group_id = 'ADNIbl'
 image_types = ['T1']
-# tasks_dir = '/teams/ARAMIS/PROJECTS/simona.bottani/ADML_paper/AIBL/balanced_test'
-tasks_dir = '/teams/ARAMIS/PROJECTS/simona.bottani/ADML_paper/AIBL/lists_by_task'
-adni_tasks_dir = '/teams/ARAMIS/PROJECTS/simona.bottani/ADML_paper/ADNI/lists_by_task'
-tasks = [('CN', 'AD'),
-         ('CN', 'MCI'),
-         # ('CN', 'pMCI'),
-         ('sMCI', 'pMCI')]
 
-smoothing = [0, 4, 8, 12]
+tasks_dir = '/AIBL/SUBJECTS/lists_by_task'
+adni_tasks_dir = '/ADNI/SUBJECTS/lists_by_task'
+tasks = [('CN', 'AD')]
 
-# atlases = ['AAL2', 'LPBA40', 'Neuromorphometrics', 'AICHA', 'Hammers']
-pvcs = [None, 'rbv']
-# rb_classifiers = {'linear_svm': ml_wf.RB_RepHoldOut_DualSVM,
-#                   'logistic_regression': ml_wf.RB_RepHoldOut_LogisticRegression,
-#                   'random_forest': ml_wf.RB_RepHoldOut_RandomForest}
+smoothing = [4]
+pvcs = [None]
 
 ##### Voxel based classifications ######
 
@@ -82,8 +74,6 @@ for image_type in image_types:
                 weights = np.loadtxt(path.join(adni_classifier_dir, 'weights.txt'))
                 w = vbio.revert_mask(weights, adni_data_mask, adni_orig_shape).flatten()
 
-                # n = abs(weights).max()
-                # w = nib.load(path.join(adni_classifier_dir, 'weights.nii.gz')).get_data().flatten() * n
                 b = np.loadtxt(path.join(adni_classifier_dir, 'intersect.txt'))
 
                 x = input_images.get_x()
@@ -91,11 +81,6 @@ for image_type in image_types:
 
                 y_hat = np.dot(w, x.transpose()) + b
 
-                # -1.37944122e+03
-                # print y_hat
-
-                # for t in [-1000, -900, -800, -700, -600, -500, -400]:
-                #     print t
                 y_binary = (y_hat > 0) * 1.0
 
                 evaluation = utils.evaluate_prediction(y, y_binary)
@@ -109,36 +94,3 @@ for image_type in image_types:
 
                 res_df = pd.DataFrame(evaluation, index=['i', ])
                 res_df.to_csv(path.join(classification_dir, 'results_auc.tsv'), sep='\t')
-
-
-# ##### Region based classifications ######
-#
-# for image_type in image_types:
-#     for atlas in atlases:
-#         for task in tasks:
-#             subjects_visits_tsv = path.join(tasks_dir, '%s_vs_%s_subjects_sessions.tsv' % (task[0], task[1]))
-#             diagnoses_tsv = path.join(tasks_dir, '%s_vs_%s_diagnoses.tsv' % (task[0], task[1]))
-#
-#             for classifier in rb_classifiers:
-#                 ml_class = rb_classifiers[classifier]
-#
-#                 for pvc in pvcs:
-#                     if image_type == 'T1':
-#                         if pvc is None:
-#                             classification_dir = path.join(output_dir, image_type, 'region_based',
-#                                                            'atlas-%s' % atlas, classifier,
-#                                                            '%s_vs_%s' % (task[0], task[1]))
-#                         else:
-#                             continue
-#                     else:
-#                         classification_dir = path.join(output_dir, image_type, 'region_based', 'pvc-%s' % pvc,
-#                                                        'atlas-%s' % atlas, classifier,
-#                                                        '%s_vs_%s' % (task[0], task[1]))
-#
-#                     if not path.exists(classification_dir):
-#                         os.makedirs(classification_dir)
-#
-#                     print "Running %s" % classification_dir
-#                     wf = ml_class(caps_dir, subjects_visits_tsv, diagnoses_tsv, group_id, image_type, atlas,
-#                                   classification_dir, pvc=pvc, n_iterations=n_iterations, n_threads=n_threads)
-#                     wf.run()

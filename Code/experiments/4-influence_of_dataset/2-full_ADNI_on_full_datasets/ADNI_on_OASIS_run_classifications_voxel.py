@@ -12,22 +12,21 @@ import clinica.pipelines.machine_learning.voxel_based_io as vbio
 from sklearn.metrics import roc_auc_score
 
 
-caps_dir = '/teams/ARAMIS/PROJECTS/CLINICA/CLINICA_datasets/CAPS/CAPS_OASIS'
-adni_caps_dir = '/teams/ARAMIS/PROJECTS/CLINICA/CLINICA_datasets/CAPS/CAPS_ADNI'
+caps_dir = '/OASIS/CAPS'
+adni_caps_dir = '/ADNI/CAPS'
 
-adni_output_dir = '/teams/ARAMIS/PROJECTS/simona.bottani/ADML_paper/ADNI/outputs'
-output_dir = '/teams/ARAMIS/PROJECTS/simona.bottani/ADML_paper/OASIS/ADNI_test'
+adni_output_dir = '/ADNI/CLASSIFICATION/OUTPUTS'
+output_dir = '/OASIS/CLASSIFICATION/OUTPUTS'
 
 group_id = 'ADNIbl'
 image_types = ['T1']
 
-tasks_dir = '/teams/ARAMIS/PROJECTS/simona.bottani/ADML_paper/OASIS/lists_by_task'
-adni_tasks_dir = '/teams/ARAMIS/PROJECTS/simona.bottani/ADML_paper/ADNI/lists_by_task'
+tasks_dir = '/OASIS/SUBJECTS/lists_by_task'
+adni_tasks_dir = '/ADNI/SUBJECTS/lists_by_task'
 tasks = [('CN', 'AD')]
 
-smoothing = [0, 4, 8, 12]
-
-pvcs = [None, 'rbv']
+smoothing = [4]
+pvcs = [None]
 
 ##### Voxel based classifications ######
 
@@ -74,9 +73,6 @@ for image_type in image_types:
 
                 weights = np.loadtxt(path.join(adni_classifier_dir, 'weights.txt'))
                 w = vbio.revert_mask(weights, adni_data_mask, adni_orig_shape).flatten()
-
-                # n = abs(weights).max()
-                # w = nib.load(path.join(adni_classifier_dir, 'weights.nii.gz')).get_data().flatten() * n
                 b = np.loadtxt(path.join(adni_classifier_dir, 'intersect.txt'))
 
                 x = input_images.get_x()

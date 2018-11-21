@@ -12,24 +12,20 @@ import clinica.pipelines.machine_learning.region_based_io as rbio
 from sklearn.metrics import roc_auc_score
 
 
-caps_dir = '/teams/ARAMIS/PROJECTS/CLINICA/CLINICA_datasets/CAPS/CAPS_AIBL'
-adni_caps_dir = '/teams/ARAMIS/PROJECTS/CLINICA/CLINICA_datasets/CAPS/CAPS_ADNI'
+caps_dir = '/OASIS/CAPS'
+adni_caps_dir = '/ADNI/CAPS'
 
-adni_output_dir = '/teams/ARAMIS/PROJECTS/simona.bottani/ADML_paper/ADNI/outputs'
-output_dir = '/teams/ARAMIS/PROJECTS/simona.bottani/ADML_paper/AIBL/ADNI_test'
+adni_output_dir = '/ADNI/CLASSIFICATION/OUTPUTS'
+output_dir = '/OASIS/CLASSIFICATION/OUTPUTS'
 
 group_id = 'ADNIbl'
 image_types = ['T1']
 
-# tasks_dir = '/teams/ARAMIS/PROJECTS/simona.bottani/ADML_paper/AIBL/balanced_test'
-tasks_dir = '/teams/ARAMIS/PROJECTS/simona.bottani/ADML_paper/AIBL/lists_by_task'
-adni_tasks_dir = '/teams/ARAMIS/PROJECTS/simona.bottani/ADML_paper/ADNI/lists_by_task'
-tasks = [('CN', 'AD'),
-         ('CN', 'MCI'),
-         # ('CN', 'pMCI'),
-         ('sMCI', 'pMCI')]
+tasks_dir = '/OASIS/SUBJECTS/lists_by_task'
+adni_tasks_dir = '/ADNI/SUBJECTS/lists_by_task'
+tasks = [('CN', 'AD')]
 
-atlases = ['AAL2', 'LPBA40', 'Neuromorphometrics', 'AICHA', 'Hammers']
+atlases = ['AAL2']
 
 ##### Region based classifications ######
 
@@ -55,17 +51,10 @@ for image_type in image_types:
 
             print "Running %s" % classification_dir
 
-            # adni_images = CAPSRegionBasedInput(adni_caps_dir, adni_subjects_visits_tsv, adni_diagnoses_tsv, group_id,
-            #                                    image_type, atlas)
-
             input_images = CAPSRegionBasedInput(caps_dir, subjects_visits_tsv, diagnoses_tsv, group_id,
                                                 image_type, atlas)
 
-            # adni_x, adni_orig_shape, adni_data_mask = rbio.load_data(adni_images.get_images(), mask=True)
-
             w = np.loadtxt(path.join(adni_classifier_dir, 'weights.txt'))
-
-            # w = rbio.revert_mask(weights, adni_data_mask, adni_orig_shape).flatten()
 
             b = np.loadtxt(path.join(adni_classifier_dir, 'intersect.txt'))
 
@@ -87,3 +76,10 @@ for image_type in image_types:
 
             res_df = pd.DataFrame(evaluation, index=['i', ])
             res_df.to_csv(path.join(classification_dir, 'results_auc.tsv'), sep='\t', index=False)
+
+            iteration_subjects_df = pd.DataFrame({'y': y,
+                                                  'y_hat': y_binary,
+                                                  'y_index': range(len(y)),
+                                                  'participant_id': input_images._subjects})
+            iteration_subjects_df.to_csv(path.join(classification_dir, 'subjects.tsv'),
+                                         index=False, sep='\t', encoding='utf-8')
