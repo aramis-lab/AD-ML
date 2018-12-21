@@ -1,0 +1,20 @@
+# Python and system files
+build/
+dist/
+examples/external-data
+*egg-info
+*.log
+*.lock
+*.pyc
+*.o
+*.lib
+*.sys
+*.so
+.DS_Store
+
+
+# Editor's files
+.idea
+.vscode
+
+
