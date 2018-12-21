@@ -4,6 +4,7 @@ If you use this software, please cite:
 > J. Samper-Gonzalez, N. Burgos, S. Bottani, S. Fontanella, P. Lu, A. Marcoux, A. Routier, J. Guillon, M. Bacci, J. Wen, A. Bertrand, H. Bertin, M.-O. Habert, S. Durrleman, T. Evgeniou and O. Colliot, **Reproducible evaluation of classification methods in Alzheimer's disease: Framework and application to MRI and PET data**. NeuroImage, 183:504–521, 2018 [doi:10.1016/j.neuroimage.2018.08.042](https://doi.org/10.1016/j.neuroimage.2018.08.042) - [Paper in PDF](https://hal.inria.fr/hal-01858384/document) - [Supplementary material](https://www.biorxiv.org/content/early/2018/04/06/274324.figures-only)
 >
 
+
 This code relies heavily on the [Clinica software platform](http://www.clinica.run) that you will need to install.
 
 The documentation is available at: https://gitlab.icm-institute.org/aramislab/AD-ML/wikis/home
