@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+__author__ = ["Junhao Wen", "Jorge Samper-Gonzalez"]
+__copyright__ = "Copyright 2016-2018 The Aramis Lab Team"
+__credits__ = ["Nipype"]
+__license__ = "See LICENSE.txt file"
+__version__ = "0.1.0"
+__status__ = "Development"
 
 import os
 from os import path

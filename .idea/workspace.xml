@@ -2,10 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d312101e-5c25-4f27-9abf-66275e97d024" name="Default" comment="Adding tsv files for subjects">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/clinica_ml_dwi/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2018_NeuroImage/Results/readme.txt" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Results/readme.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/subjects/CN_vs_AD.tsv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/subjects/CN_vs_AD_diagnosis.tsv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/subjects/CN_vs_MCI.tsv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/subjects/CN_vs_MCI_diagnosis.tsv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/subjects/CN_vs_pMCI.tsv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/subjects/CN_vs_pMCI_diagnosis.tsv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/subjects/sMCI_vs_pMCI.tsv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/subjects/sMCI_vs_pMCI_diagnosis.tsv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/subjects_lists/CN_vs_AD.tsv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/subjects_lists/CN_vs_AD_diagnosis.tsv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/subjects_lists/CN_vs_MCI.tsv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/subjects_lists/CN_vs_MCI_diagnosis.tsv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/subjects_lists/CN_vs_pMCI.tsv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/subjects_lists/CN_vs_pMCI_diagnosis.tsv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/subjects_lists/sMCI_vs_pMCI.tsv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/subjects_lists/sMCI_vs_pMCI_diagnosis.tsv" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/subjects/__init__.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/clinica_ml_dti/input_dwi.py" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/clinica_ml_dti/input_dwi.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/clinica_ml_dti/mlworkflow_dwi.py" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/clinica_ml_dti/mlworkflow_dwi.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/clinica_ml_dti/mlworkflow_dwi_utils.py" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/clinica_ml_dti/mlworkflow_dwi_utils.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,7 +31,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="CN_vs_AD.tsv" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/subjects_lists/CN_vs_AD.tsv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -76,6 +103,9 @@
         <option value="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/clinica_ml_dwi/algorithm_dwi.py" />
         <option value="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/clinica_ml_dwi/mlworkflow_dwi.py" />
         <option value="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/clinica_ml_dwi/validation_dwi.py" />
+        <option value="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/clinica_ml_dti/input_dwi.py" />
+        <option value="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/clinica_ml_dti/mlworkflow_dwi.py" />
+        <option value="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/clinica_ml_dti/mlworkflow_dwi_utils.py" />
       </list>
     </option>
   </component>
@@ -114,6 +144,48 @@
               <item name="AD-ML" type="462c0819:PsiDirectoryNode" />
               <item name="Paper_Specific_Versions" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="AD-ML" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AD-ML" type="462c0819:PsiDirectoryNode" />
+              <item name="Paper_Specific_Versions" type="462c0819:PsiDirectoryNode" />
+              <item name="2018_OHBM_DTI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AD-ML" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AD-ML" type="462c0819:PsiDirectoryNode" />
+              <item name="Paper_Specific_Versions" type="462c0819:PsiDirectoryNode" />
+              <item name="2018_OHBM_DTI" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AD-ML" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AD-ML" type="462c0819:PsiDirectoryNode" />
+              <item name="Paper_Specific_Versions" type="462c0819:PsiDirectoryNode" />
+              <item name="2018_OHBM_DTI" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="subjects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AD-ML" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AD-ML" type="462c0819:PsiDirectoryNode" />
+              <item name="Paper_Specific_Versions" type="462c0819:PsiDirectoryNode" />
+              <item name="2019_DTI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AD-ML" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AD-ML" type="462c0819:PsiDirectoryNode" />
+              <item name="Paper_Specific_Versions" type="462c0819:PsiDirectoryNode" />
+              <item name="2019_DTI" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AD-ML" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AD-ML" type="462c0819:PsiDirectoryNode" />
+              <item name="Paper_Specific_Versions" type="462c0819:PsiDirectoryNode" />
+              <item name="2019_DTI" type="462c0819:PsiDirectoryNode" />
+              <item name="Code" type="462c0819:PsiDirectoryNode" />
+              <item name="subjects_lists" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -129,11 +201,11 @@
       <recent name="$PROJECT_DIR$/Legacy_DTI2018/Code" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/subjects_lists" />
+      <recent name="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/subjects" />
       <recent name="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/clinica_ml_dwi" />
       <recent name="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code" />
       <recent name="$PROJECT_DIR$/OHBM2018DTI/Code/subjects" />
-      <recent name="$PROJECT_DIR$/Legacy_MLMI2017/Code" />
-      <recent name="$PROJECT_DIR$/Legacy_DTI2018/Code" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -212,8 +284,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Legacy_DTI2018/Code/5-ADNI_postprocessing.py" />
-    <entry file="file://$PROJECT_DIR$/Legacy_DTI2018/Code/7-ADNI_classification_voxel.py" />
     <entry file="file://$PROJECT_DIR$/Legacy_DTI2018/Code/clinica_ml_dti/mlworkflow_dwi_utils.py" />
     <entry file="file://$PROJECT_DIR$/Legacy_MLMI2017/Code/1-ADNI_conversion.txt" />
     <entry file="file://$PROJECT_DIR$/Code/results_table.py" />
@@ -398,6 +468,92 @@
           <folding>
             <element signature="e#247#256#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/clinica_ml_dti/mlworkflow_dwi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#247#256#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/clinica_ml_dti/mlworkflow_dwi_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+          <folding>
+            <element signature="e#247#256#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/subjects/CN_vs_pMCI.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/subjects/sMCI_vs_pMCI.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/subjects/CN_vs_AD_diagnosis.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/subjects/CN_vs_MCI_diagnosis.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/subjects/CN_vs_MCI.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/subjects/CN_vs_AD.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/clinica_ml_dti/input_dwi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="51" lean-forward="true" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="51" />
+          <folding>
+            <element signature="e#247#269#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/subjects_lists/CN_vs_AD.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
