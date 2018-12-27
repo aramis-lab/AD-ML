@@ -1,6 +1,6 @@
 This subdirectory contains the guideline and steps to reproduce the experiments in the specific paper **Reproducible evaluation of diffusion MRI features for automatic classification of patients with Alzheimer’s disease** using diffusion MRI from ADNI dataset [ADNI](http://adni.loni.usc.edu/). It is developed by the [ARAMIS Lab](http://www.aramislab.fr).
 
-We assume that you have installed all the dependencies of Clinica software [Clinica software platform](http://www.clinica.run) and downloaded the ADNI original data.
+We assume that you have installed all the dependencies of [Clinica software platform](http://www.clinica.run) and downloaded the ADNI original data.
 
 # Go back to paper version of Clinica software
 

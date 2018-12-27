@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d312101e-5c25-4f27-9abf-66275e97d024" name="Default" comment="Adding tsv files for subjects">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/11-violin_plot_for_classification_results.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Results/table_all_results.tsv" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Results/readme.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/3-create_subjects_list.py" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/3-create_subjects_list.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/4-population_statistics.py" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/4-population_statistics.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/README.md" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,8 +25,8 @@
         <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="270">
-                <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+              <first_editor relative-caret-position="30">
+                <caret line="2" column="58" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -857,8 +852,8 @@
     <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="270">
-            <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="58" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
             <folding />
           </first_editor>
           <second_editor />
