@@ -2,26 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d312101e-5c25-4f27-9abf-66275e97d024" name="Default" comment="Adding tsv files for subjects">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/subjects/CN_vs_AD.tsv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/subjects/CN_vs_AD_diagnosis.tsv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/subjects/CN_vs_MCI.tsv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/subjects/CN_vs_MCI_diagnosis.tsv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/subjects/CN_vs_pMCI.tsv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/subjects/CN_vs_pMCI_diagnosis.tsv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/subjects/sMCI_vs_pMCI.tsv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/subjects/sMCI_vs_pMCI_diagnosis.tsv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/subjects_lists/CN_vs_AD.tsv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/subjects_lists/CN_vs_AD_diagnosis.tsv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/subjects_lists/CN_vs_MCI.tsv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/subjects_lists/CN_vs_MCI_diagnosis.tsv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/subjects_lists/CN_vs_pMCI.tsv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/subjects_lists/CN_vs_pMCI_diagnosis.tsv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/subjects_lists/sMCI_vs_pMCI.tsv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/subjects_lists/sMCI_vs_pMCI_diagnosis.tsv" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/subjects/__init__.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/clinica_ml_dti/input_dwi.py" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/clinica_ml_dti/input_dwi.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/clinica_ml_dti/mlworkflow_dwi.py" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/clinica_ml_dti/mlworkflow_dwi.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/clinica_ml_dti/mlworkflow_dwi_utils.py" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/clinica_ml_dti/mlworkflow_dwi_utils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/1-go_back_to_paper_version_clinica.sh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/README.md" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/Clinica_paper_specific_git_commit_log.txt" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/1-ADNI_conversion.txt" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/2-ADNI_conversion.sh" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/2-create_subjects_list.py" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/4-population_statistics.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/3-population_statistics.py" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/3-create_subjects_list.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/4-ADNI_preprocessing.txt" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/5-ADNI_preprocessing.sh" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/5-ADNI_processing.txt" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/6-ADNI_processing.sh" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/6-ADNI_postprocessing.py" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/7-ADNI_postprocessing.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/7-ADNI_classification_original_data.py" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/8-ADNI_classification_original_data.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/8-ADNI_classification_balanced_data.py" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/9-ADNI_classification_balanced_data.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/9-ADNI_classification_feature_selection.py" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/10-ADNI_classification_feature_selection.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,15 +23,28 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="AD-ML" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CN_vs_AD.tsv" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/subjects_lists/CN_vs_AD.tsv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="432">
+                <caret line="71" column="50" selection-start-line="71" selection-start-column="50" selection-end-line="71" selection-end-column="50" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
+          </provider>
+          <provider editor-type-id="MarkdownFxPreviewEditor">
+            <state />
           </provider>
         </entry>
       </file>
@@ -106,14 +112,30 @@
         <option value="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/clinica_ml_dti/input_dwi.py" />
         <option value="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/clinica_ml_dti/mlworkflow_dwi.py" />
         <option value="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/clinica_ml_dti/mlworkflow_dwi_utils.py" />
+        <option value="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/1-install_clinica_software.sh" />
+        <option value="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/2-ADNI_conversion.txt" />
+        <option value="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/2-ADNI_conversion.sh" />
+        <option value="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/5-ADNI_preprocessing.sh" />
+        <option value="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/6-ADNI_processing.sh" />
+        <option value="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/README.md" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="552" />
-    <option name="y" value="34" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="10" />
+    <option name="y" value="23" />
     <option name="width" value="1270" />
-    <option name="height" value="1047" />
+    <option name="height" value="712" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -130,66 +152,96 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
-          <expand>
-            <path>
-              <item name="AD-ML" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AD-ML" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AD-ML" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AD-ML" type="462c0819:PsiDirectoryNode" />
-              <item name="Paper_Specific_Versions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AD-ML" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AD-ML" type="462c0819:PsiDirectoryNode" />
-              <item name="Paper_Specific_Versions" type="462c0819:PsiDirectoryNode" />
-              <item name="2018_OHBM_DTI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AD-ML" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AD-ML" type="462c0819:PsiDirectoryNode" />
-              <item name="Paper_Specific_Versions" type="462c0819:PsiDirectoryNode" />
-              <item name="2018_OHBM_DTI" type="462c0819:PsiDirectoryNode" />
-              <item name="Code" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AD-ML" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AD-ML" type="462c0819:PsiDirectoryNode" />
-              <item name="Paper_Specific_Versions" type="462c0819:PsiDirectoryNode" />
-              <item name="2018_OHBM_DTI" type="462c0819:PsiDirectoryNode" />
-              <item name="Code" type="462c0819:PsiDirectoryNode" />
-              <item name="subjects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AD-ML" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AD-ML" type="462c0819:PsiDirectoryNode" />
-              <item name="Paper_Specific_Versions" type="462c0819:PsiDirectoryNode" />
-              <item name="2019_DTI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AD-ML" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AD-ML" type="462c0819:PsiDirectoryNode" />
-              <item name="Paper_Specific_Versions" type="462c0819:PsiDirectoryNode" />
-              <item name="2019_DTI" type="462c0819:PsiDirectoryNode" />
-              <item name="Code" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AD-ML" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AD-ML" type="462c0819:PsiDirectoryNode" />
-              <item name="Paper_Specific_Versions" type="462c0819:PsiDirectoryNode" />
-              <item name="2019_DTI" type="462c0819:PsiDirectoryNode" />
-              <item name="Code" type="462c0819:PsiDirectoryNode" />
-              <item name="subjects_lists" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AD-ML" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AD-ML" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AD-ML" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AD-ML" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AD-ML" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Paper_Specific_Versions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2019_DTI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AD-ML" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AD-ML" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Paper_Specific_Versions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2019_DTI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AD-ML" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AD-ML" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Paper_Specific_Versions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AD-ML" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AD-ML" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Generic_Version" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -220,6 +272,153 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="AD-ML" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="AD-ML" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="AD-ML" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="AD-ML" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="AD-ML" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="AD-ML" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="AD-ML" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+  </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
@@ -234,26 +433,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1204" extended-state="6" />
+    <frame x="10" y="23" width="1270" height="712" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25538972" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33626902" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -276,6 +476,14 @@
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -284,12 +492,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Legacy_DTI2018/Code/clinica_ml_dti/mlworkflow_dwi_utils.py" />
-    <entry file="file://$PROJECT_DIR$/Legacy_MLMI2017/Code/1-ADNI_conversion.txt" />
-    <entry file="file://$PROJECT_DIR$/Code/results_table.py" />
-    <entry file="file://$PROJECT_DIR$/Code/1-conversion.txt" />
-    <entry file="file://$PROJECT_DIR$/Legacy_DTI2018/Code/clinica_ml_dti/input_dwi.py" />
-    <entry file="file://$PROJECT_DIR$/Legacy_DTI2018/Code/clinica_ml_dti/mlworkflow_dwi.py" />
     <entry file="file://$PROJECT_DIR$/Legacy_DTI2018/Code/image_postprocessing.py" />
     <entry file="file://$PROJECT_DIR$/Legacy_MLMI2017/Code/5-ADNI_classification.py" />
     <entry file="file://$PROJECT_DIR$/Legacy_DTI2018/Code/clinica_ml_dti/__init__.py" />
@@ -308,15 +510,14 @@
     <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/8-ADNI_classification_balanced_data.py">
+    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/9-ADNI_classification_balanced_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="37" selection-end-column="105" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="37" selection-end-column="105" />
           <folding />
         </state>
       </provider>
@@ -324,31 +525,21 @@
     <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/7-ADNI_classification_voxel.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/5-ADNI_processing.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/clinica_ml_dwi/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/9-ADNI_classification_feature_selection.py">
+    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/10-ADNI_classification_feature_selection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="702">
-          <caret line="39" column="143" lean-forward="true" selection-start-line="39" selection-start-column="143" selection-end-line="39" selection-end-column="143" />
+          <caret line="39" column="143" selection-start-line="39" selection-start-column="143" selection-end-line="39" selection-end-column="143" />
           <folding />
         </state>
       </provider>
@@ -356,205 +547,243 @@
     <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2018_NeuroImage/Results/table_all_results.tsv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2430">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Results/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="65" lean-forward="false" selection-start-line="0" selection-start-column="65" selection-end-line="0" selection-end-column="65" />
-          <folding />
+          <caret line="0" column="65" selection-start-line="0" selection-start-column="65" selection-end-line="0" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/2-create_subjects_list.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/3-population_statistics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/4-ADNI_preprocessing.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/6-ADNI_postprocessing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/7-ADNI_classification_original_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/clinica_ml_dwi/algorithm_dwi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="e#238#257#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/clinica_ml_dwi/dwi_postprocessing_dti.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-          <folding />
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/clinica_ml_dwi/dwi_postprocessing_dti_utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4392">
-          <caret line="244" column="22" lean-forward="false" selection-start-line="244" selection-start-column="4" selection-end-line="244" selection-end-column="22" />
-          <folding />
+          <caret line="244" column="22" selection-start-line="244" selection-start-column="4" selection-end-line="244" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/clinica_ml_dwi/input_dwi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-          <folding />
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/clinica_ml_dwi/mlworkflow_dwi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding />
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/clinica_ml_dwi/mlworkflow_dwi_utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
-          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/clinica_ml_dwi/validation_dwi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#247#256#0" expanded="true" />
-          </folding>
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/clinica_ml_dti/mlworkflow_dwi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#247#256#0" expanded="true" />
-          </folding>
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/clinica_ml_dti/mlworkflow_dwi_utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
-          <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-          <folding>
-            <element signature="e#247#256#0" expanded="true" />
-          </folding>
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/subjects/CN_vs_pMCI.tsv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-          <folding />
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/subjects/sMCI_vs_pMCI.tsv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/subjects/CN_vs_AD_diagnosis.tsv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/subjects/CN_vs_MCI_diagnosis.tsv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/subjects/CN_vs_MCI.tsv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-          <folding />
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/subjects/CN_vs_AD.tsv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-          <folding />
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/clinica_ml_dti/input_dwi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
-          <caret line="1" column="51" lean-forward="true" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="51" />
-          <folding>
-            <element signature="e#247#269#0" expanded="true" />
-          </folding>
+          <caret line="1" column="51" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/subjects_lists/CN_vs_AD.tsv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="94" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/Clinica_paper_specific_git_commit_log.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="40" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/1-go_back_to_paper_version_clinica.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="11" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/2-ADNI_conversion.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/4-population_statistics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/5-ADNI_preprocessing.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/3-create_subjects_list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/6-ADNI_processing.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/clinica_ml_dwi/dwi_postprocessing_dti.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/7-ADNI_postprocessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/8-ADNI_classification_original_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="432">
+            <caret line="71" column="50" selection-start-line="71" selection-start-column="50" selection-end-line="71" selection-end-column="50" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
       </provider>
     </entry>
   </component>
