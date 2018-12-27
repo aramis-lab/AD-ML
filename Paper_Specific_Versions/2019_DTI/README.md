@@ -6,7 +6,7 @@ We assume that you have installed all the dependencies of Clinica software [Clin
 
 The commandline to go back to the specific git commit of the paper:
 ```
-bash 1-go_back_to_paper_version_clinica.sh  
+bash 1-go_back_to_paper_version_clinica.sh
 ```
 
 # Convert the original ADNI data into BIDS format
@@ -70,4 +70,12 @@ Classification results of feature selection bias on diffusion MRI:
 
 ```
 python 10-ADNI_classification_feature_selection.py
+```
+
+# Vilon plot for classification results
+
+The distribution of classification accuracy during cross-validation could be presented as violin plots:
+
+```
+python 11-violin_plot_for_classification_results.py
 ```

@@ -2,19 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d312101e-5c25-4f27-9abf-66275e97d024" name="Default" comment="Adding tsv files for subjects">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/1-go_back_to_paper_version_clinica.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/README.md" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/Clinica_paper_specific_git_commit_log.txt" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/1-ADNI_conversion.txt" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/2-ADNI_conversion.sh" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/2-create_subjects_list.py" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/4-population_statistics.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/3-population_statistics.py" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/3-create_subjects_list.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/4-ADNI_preprocessing.txt" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/5-ADNI_preprocessing.sh" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/5-ADNI_processing.txt" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/6-ADNI_processing.sh" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/6-ADNI_postprocessing.py" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/7-ADNI_postprocessing.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/7-ADNI_classification_original_data.py" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/8-ADNI_classification_original_data.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/8-ADNI_classification_balanced_data.py" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/9-ADNI_classification_balanced_data.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/9-ADNI_classification_feature_selection.py" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/10-ADNI_classification_feature_selection.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/11-violin_plot_for_classification_results.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Results/table_all_results.tsv" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Results/readme.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/3-create_subjects_list.py" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/3-create_subjects_list.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/4-population_statistics.py" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/4-population_statistics.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/README.md" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,8 +30,8 @@
         <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="432">
-                <caret line="71" column="50" selection-start-line="71" selection-start-column="50" selection-end-line="71" selection-end-column="50" />
+              <first_editor relative-caret-position="270">
+                <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -117,6 +111,10 @@
         <option value="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/2-ADNI_conversion.sh" />
         <option value="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/5-ADNI_preprocessing.sh" />
         <option value="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/6-ADNI_processing.sh" />
+        <option value="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/11-violin_plot_for_classification_results.py" />
+        <option value="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/3-create_subjects_list.py" />
+        <option value="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/4-population_statistics.py" />
+        <option value="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Results/table_all_results.tsv" />
         <option value="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/README.md" />
       </list>
     </option>
@@ -206,6 +204,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Results" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AD-ML" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AD-ML" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Paper_Specific_Versions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2019_DTI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Code" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -234,6 +254,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Paper_Specific_Versions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2018_NeuroImage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Results" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AD-ML" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AD-ML" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Paper_Specific_Versions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2018_NeuroImage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AD-ML" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AD-ML" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Generic_Version" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -248,16 +308,16 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Results" />
-      <recent name="$PROJECT_DIR$/Legacy_DTI2018/Code" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Results" />
       <recent name="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/subjects_lists" />
       <recent name="$PROJECT_DIR$/Paper_Specific_Versions/2018_OHBM_DTI/Code/subjects" />
       <recent name="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/clinica_ml_dwi" />
       <recent name="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code" />
-      <recent name="$PROJECT_DIR$/OHBM2018DTI/Code/subjects" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Results" />
+      <recent name="$PROJECT_DIR$/Legacy_DTI2018/Code" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -434,11 +494,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="23" width="1270" height="712" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33626902" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20496397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -450,7 +511,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -492,8 +552,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Legacy_DTI2018/Code/image_postprocessing.py" />
-    <entry file="file://$PROJECT_DIR$/Legacy_MLMI2017/Code/5-ADNI_classification.py" />
     <entry file="file://$PROJECT_DIR$/Legacy_DTI2018/Code/clinica_ml_dti/__init__.py" />
     <entry file="file://$PROJECT_DIR$/Legacy_DTI2018/Code/3-population_statistics.py" />
     <entry file="file://$PROJECT_DIR$/Legacy_DTI2018/Code/2-create_subjects_list.py" />
@@ -548,13 +606,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2430">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Results/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="65" selection-start-line="0" selection-start-column="65" selection-end-line="0" selection-end-column="65" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -576,6 +628,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4392">
           <caret line="244" column="22" selection-start-line="244" selection-start-column="4" selection-end-line="244" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -583,6 +636,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -590,6 +644,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -597,6 +652,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -716,26 +774,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/4-population_statistics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/5-ADNI_preprocessing.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="32" selection-start-line="1" selection-start-column="32" selection-end-line="1" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/3-create_subjects_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -772,11 +814,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/11-violin_plot_for_classification_results.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/4-population_statistics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Code/3-create_subjects_list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Results/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="65" selection-start-line="0" selection-start-column="65" selection-end-line="0" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/Results/table_all_results.tsv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="432">
-            <caret line="71" column="50" selection-start-line="71" selection-start-column="50" selection-end-line="71" selection-end-column="50" />
+          <first_editor relative-caret-position="270">
+            <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
             <folding />
           </first_editor>
           <second_editor />
