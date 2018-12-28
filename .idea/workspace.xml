@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d312101e-5c25-4f27-9abf-66275e97d024" name="Default" comment="Adding tsv files for subjects">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/README.md" afterPath="$PROJECT_DIR$/Paper_Specific_Versions/2019_DTI/README.md" />
-    </list>
+    <list default="true" id="d312101e-5c25-4f27-9abf-66275e97d024" name="Default" comment="Adding tsv files for subjects" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -648,7 +645,7 @@
         <state relative-caret-position="234">
           <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="false" />
           </folding>
         </state>
       </provider>
