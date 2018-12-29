@@ -71,11 +71,3 @@ Classification results of feature selection bias on diffusion MRI:
 ```
 python 10-ADNI_classification_feature_selection.py
 ```
-
-# Vilon plot for classification results
-
-The distribution of classification accuracy during cross-validation could be presented as violin plots:
-
-```
-python 11-violin_plot_for_classification_results.py
-```
