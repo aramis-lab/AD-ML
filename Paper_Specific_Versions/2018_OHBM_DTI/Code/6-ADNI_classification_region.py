@@ -1,4 +1,4 @@
-from clinica_ml_dti.mlworkflow_dwi_utils import run_roi_based_classification
+from clinica_ml_dwi.mlworkflow_dwi_utils import run_roi_based_classification
 
 # ########################
 # ### Original classification

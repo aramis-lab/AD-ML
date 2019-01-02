@@ -4,10 +4,10 @@ from clinica_ml_dwi.mlworkflow_dwi_utils import run_voxel_based_classification
 # ### Original classification
 # ########################
 
-caps_directory= PATH/TO/CAPS
-output_dir = PATH/TO/CLASSIFICATION_OUTPUT
-diagnoses_tsv = PATH/TO/DIAGONISIS_TSV
-subjects_visits_tsv = PATH/TO/DIAGONISIS_TSV
+caps_directory= 'PATH/TO/CAPS'
+output_dir = 'PATH/TO/CLASSIFICATION_OUTPUT'
+diagnoses_tsv = 'PATH/TO/DIAGONISIS_TSV'
+subjects_visits_tsv = 'PATH/TO/DIAGONISIS_TSV'
 n_threads = 72
 n_iterations = 250
 test_size = 0.2

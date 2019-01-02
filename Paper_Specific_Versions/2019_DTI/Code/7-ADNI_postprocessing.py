@@ -2,9 +2,9 @@
 ## for diffusion MRI
 from clinica_ml_dwi.dwi_postprocessing_dti import dwi_postprocessing_dti
 
-CAPS= CAPS
-tsv= SUBJECTS_DIR/subjects_T1_dwi.tsv
-working_dir = WORKING/DIR
+CAPS= 'CAPS_DIR'
+tsv= 'SUBJECTS_DIR/participant_tsv_file'
+working_dir = 'WORKING/DIR'
 tissue_lists = [[1], [2], [1, 2]]
 mask_threshold = [0.3]
 smooth = [8]

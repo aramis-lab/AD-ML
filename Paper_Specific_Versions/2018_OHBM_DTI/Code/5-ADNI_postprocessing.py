@@ -1,17 +1,16 @@
-from Legacy_MLMI2017.Code.image_postprocessing import ADNI_mask_dti_from_spm
+### Run postprocessing of images
+## for diffusion MRI
+from clinica_ml_dwi.dwi_postprocessing_dti import dwi_postprocessing_dti
 
-caps_directory= PATH/TO/CAPS
-tsv= PATH/TO/TSV
-working_dir = PATH/TO/WORKING_DIR
-tissues_combinations = [[1], [2], [1, 2]]
+CAPS= 'CAPS_DIR'
+tsv= 'SUBJECTS_DIR/participant_tsv_file'
+working_dir = 'WORKING/DIR'
+tissue_lists = [[1], [2], [1, 2]]
+mask_threshold = [0.3]
+smooth = [8]
 
-for mask_tissue in tissues_combinations:
-    if len(mask_tissue) == 1 and mask_tissue[0] == 1:
-        print "Run postprocessing for GM"
-    elif len(mask_tissue) == 1 and mask_tissue[0] == 2:
-        print "Run postprocessing for WM"
-    else:
-        print "Run postprocessing for GM+WM"
-        
-    wf = ADNI_mask_dti_from_spm(caps_directory, tsv, working_directory=working_dir, mask_tissues=mask_tissue)
-    wf.run(plugin='MultiProc', plugin_args={'n_procs': 72})
+for i in tissue_lists:
+    for j in smooth:
+        for k in mask_threshold:
+            wf = dwi_postprocessing_dti(CAPS, tsv, working_directory=working_dir, mask_tissues=i, mask_threshold=k, smooth=j)
+            wf.run(plugin='MultiProc', plugin_args={'n_procs': 8})
