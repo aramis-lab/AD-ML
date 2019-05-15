@@ -1,6 +1,11 @@
-This subdirectory contains the guideline and steps to reproduce the experiments in the specific paper **Reproducible evaluation of diffusion MRI features for automatic classification of patients with Alzheimer’s disease** using diffusion MRI from ADNI dataset [ADNI](http://adni.loni.usc.edu/). It is developed by the [ARAMIS Lab](http://www.aramislab.fr).
+This subdirectory contains the guideline and steps to reproduce the experiments
+in the specific paper **Reproducible evaluation of diffusion MRI features for
+automatic classification of patients with Alzheimer’s disease** using diffusion
+MRI from ADNI dataset [ADNI](http://adni.loni.usc.edu/). It is developed by the
+[ARAMIS Lab](http://www.aramislab.fr).
 
-We assume that you have installed all the dependencies of [Clinica software platform](http://www.clinica.run) and downloaded the ADNI original data.
+We assume that you have installed all the dependencies of [Clinica software
+platform](http://www.clinica.run) and downloaded the ADNI original data.
 
 # Go back to paper version of Clinica software
 
@@ -11,9 +16,10 @@ bash 1-go_back_to_paper_version_clinica.sh
 
 # Convert the original ADNI data into BIDS format
 
-The original ADNI data should be downloaded without further touch (Data we used in our paper was downloaded in October 2016). 
+The original ADNI data should be downloaded without further touch (Data we used
+in our paper was downloaded in October 2016). 
 
-The commandline to convert the data automatically:
+The command line to convert the data automatically:
 ```
 bash 2-ADNI_conversion.sh
 ```
@@ -34,7 +40,8 @@ python 4-population_statistics.py
 
 # Run image processing pipelines
 
-The fist two pipelines were partly integrated into Clinica software and a postprocesing python script was also developed.
+The fist two pipelines were partly integrated into Clinica software and a
+postprocesing python script was also developed.
 
 Runs these pipelines sequentially:
 
@@ -52,7 +59,8 @@ python 7-ADNI_postprocessing.py
 
 # Run classification tasks
 
-The scripts to obtain the results of the experiments from the paper are as follows:
+The scripts to obtain the results of the experiments from the paper are as
+follows:
 
 Classification results of original data on T1-weighted and diffusion MRI:
 
