@@ -36,48 +36,8 @@ git checkout 2019_DTI
 jupyter notebook Experiments.ipynb
 ```
 
-# Convert the original ADNI data into BIDS format
 
-The original ADNI data should be downloaded without further touch (Data we used
-in our paper was downloaded in October 2016). 
-
-The command line to convert the data automatically:
-```
-bash 2-ADNI_conversion.sh
-```
-
-# Create the subjects lists
-
-The script to choose the subjects available at baseline for diffusion MRI:
-```
-python 3-create_subjects_list.py
-```
-
-# Create the demographic table information
-
-The script to get demographic information based on the chosen population:
-```
-python 4-population_statistics.py
-```
-
-# Run image processing pipelines
-
-The fist two pipelines were partly integrated into Clinica software and a
-postprocesing python script was also developed.
-
-Runs these pipelines sequentially:
-
-```
-bash 5-ADNI_preprocessing.sh
-```
-
-```
-bash 6-ADNI_processing.sh
-```
-
-```
-python 7-ADNI_postprocessing.py
-```
+***** TO DELETE *****
 
 # Run classification tasks
 
