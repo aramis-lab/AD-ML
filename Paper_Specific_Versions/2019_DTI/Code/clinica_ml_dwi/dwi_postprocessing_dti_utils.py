@@ -235,7 +235,10 @@ def nilearn_smoothing(in_files, fwhm, out_prefix):
     import os
 
     file_name = os.path.basename(in_files)
-    smoothed_data = smooth_img(in_files, fwhm)
+    if fwhm == 0:
+        smoothed_data = smooth_img(in_files, None)
+    else:
+        smoothed_data = smooth_img(in_files, fwhm)
     smoothed_data.to_filename(out_prefix + file_name)
 
     smoothed_files = os.path.abspath(os.path.join(os.getcwd(), out_prefix + file_name))
