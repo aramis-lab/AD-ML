@@ -14,5 +14,5 @@ In addition, if you use Diffusion MRI data or related code, please cite:
 
 This code relies heavily on the [Clinica software platform](http://www.clinica.run) that you will need to install.
 
-The documentation is available at: https://gitlab.icm-institute.org/aramislab/AD-ML/wikis/home
+The documentation is available at: https://github.com/aramis-lab/AD-ML/wiki
 
