@@ -15,9 +15,10 @@ Conda environment to avoid conflicts with previos versions of libraries already
 installed in your computer.
 
 ```bash
-git clone git@gitlab.icm-institute.org:aramislab/clinica.git clinica_for_2019_DTI
+git clone https://github.com/aramis-lab/clinica.git clinica_for_2019_DTI
 cd clinica_for_2019_DTI/
-git checkout a27de358cd4546ad59595d3c565afd3e9b8524a0
+git checkout 0bb46b3b8badfacd1632cf0270b096eb270629d1 
+# Former commit-id : a27de358cd4546ad59595d3c565afd3e9b8524a0
 conda env create -f environment.yml --name 2019_DTI_env
 conda activate 2019_DTI_env
 conda install jupyter
@@ -31,7 +32,7 @@ experiments). You can run the notebook presented in this folder.
 
 ```bash
 conda activate 2019_DTI_env
-git clone git@gitlab.icm-institute.org:aramislab/AD-ML.git
+git clone https://github.com/aramis-lab/AD-ML.git 
 git checkout 2019_DTI
 jupyter notebook Experiments.ipynb
 ```
