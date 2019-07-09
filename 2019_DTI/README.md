@@ -37,28 +37,3 @@ git checkout 2019_DTI
 jupyter notebook Experiments.ipynb
 ```
 
-
-***** TO DELETE *****
-
-# Run classification tasks
-
-The scripts to obtain the results of the experiments from the paper are as
-follows:
-
-Classification results of original data on T1-weighted and diffusion MRI:
-
-```
-python 8-ADNI_classification_original_data.py
-```
-
-Classification results of balanced data on diffusion MRI:
-
-```
-python 9-ADNI_classification_balanced_data.py
-```
-
-Classification results of feature selection bias on diffusion MRI:
-
-```
-python 10-ADNI_classification_feature_selection.py
-```
