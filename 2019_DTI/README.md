@@ -1,6 +1,6 @@
 
-This subdirectory contains the guideline and steps to reproduce the experiments
-in the specific paper **Reproducible evaluation of diffusion MRI features for
+This subdirectory contains the guidelines and steps to reproduce the experiments
+from the specific paper **Reproducible evaluation of diffusion MRI features for
 automatic classification of patients with Alzheimer’s disease** using diffusion
 MRI from ADNI dataset [ADNI](http://adni.loni.usc.edu/). It is developed by the
 [ARAMIS Lab](http://www.aramislab.fr).
