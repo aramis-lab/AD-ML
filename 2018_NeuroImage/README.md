@@ -1,7 +1,7 @@
 
 This subdirectory contains the guidelines and steps to reproduce the experiments from the specific paper **Reproducible evaluation of classification methods in Alzheimer's disease: Framework and application to MRI and PET data** using data obtained from [ADNI](http://adni.loni.usc.edu/), [AIBL](https://aibl.csiro.au/research/neuroimaging/) and [OASIS](http://www.oasis-brains.org/) datasets. It is developed by the [ARAMIS Lab](http://www.aramislab.fr).
 
-We assume that you have installed all the dependencies of [Clinica software platform](http://www.clinica.run) and downloaded the ADNI original data.
+We assume that you have installed all the dependencies of [Clinica software platform](http://www.clinica.run) and downloaded the ADNI, AIBL and OASIS original data.
 
 # Ensure that you have installed the corresponding version of Clinica
 Install Clinica in developer's mode using the commit that corresponds to the version of Clinica used in this work. For that, we suggest to use an isolated Conda environment to avoid conflicts with previous versions of libraries already installed in your computer.
