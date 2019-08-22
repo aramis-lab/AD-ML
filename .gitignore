@@ -1,7 +1,6 @@
 # Python and system files
 build/
 dist/
-examples/external-data
 *egg-info
 *.log
 *.lock
@@ -17,4 +16,13 @@ examples/external-data
 .idea
 .vscode
 
+# Code coverage and crash log files
+.coverage
+crash*
 
+# Pytest files
+.pytest_cache/
+test/data
+
+# Notebook jupyter
+.ipynb_checkpoints/
