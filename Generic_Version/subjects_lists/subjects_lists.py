@@ -102,7 +102,7 @@ def create_subjects_lists(path_bids, output_path, database):
 
                         # we consider only the subjects with t1 in the PET list
             if os.path.isfile(os.path.join(path_bids, sublist[sub], 'ses-M00', 'pet',
-                                                       sublist[sub] + '_ses-M00_task-rest_acq-fdg_pet.nii.gz')):
+                                                       sublist[sub] + '_ses-M00_trc-18FFDG_pet.nii.gz')):
                     subjects_with_pet.append(sublist[sub])
 
 
