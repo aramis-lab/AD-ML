@@ -380,7 +380,7 @@ def find_parameters_statistics(path_bids, subjects_list, output_path, database):
         all_cdrscore.append(cdrscore) #cdr score at M00
         all_diagnosis.append(diagnosis)  # diagnosis at M00
     all_sex = []
-    for j in xrange(len(all_gender)):
+    for j in range(len(all_gender)):
         # sex=all_gender[j][j]
         sex = all_gender[j]
         all_sex.append(sex)
@@ -520,7 +520,7 @@ def obtain_lists_diagnosis(path_bids,output_path, database, N_months = 36):
     if database == 'OASIS':
         participants_tsv = pd.io.parsers.read_csv(os.path.join(path_bids, 'participants.tsv'), sep='\t').drop(
             'alternative_id_1', 1).drop_duplicates()
-    for i in xrange(len(dx.participant_id)):
+    for i in range(len(dx.participant_id)):
         if database == 'OASIS' and participants_tsv[participants_tsv.participant_id == dx.participant_id[i]].age_bl.item()<61:
                 break
         else:
@@ -578,7 +578,7 @@ def obtain_lists_diagnosis_amyloid(output_path):
     am = amyloid_list.drop_duplicates()
 
     d = defaultdict(list)
-    for i in xrange(len(dx.participant_id)):
+    for i in range(len(dx.participant_id)):
         sub_id = dx.participant_id[i]
         index = am.diagnosis[am.participant_id == sub_id].index.tolist()
         if index != []:
