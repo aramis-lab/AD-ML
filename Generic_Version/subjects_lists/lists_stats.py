@@ -29,8 +29,7 @@ def run_lists_stats(path_bids, output_path, database, subjects_list, adnimerge):
 
     '''
 
-    from Code.subjects.lists_stats import statistics_cn_ad_mci_M00, statistics_cn_ad_mci_amylod_M00
-    from Code.subjects.subjects_lists import run_subjects_lists, create_diagnosis_all_participants, obtain_global_list
+    from .subjects_lists import run_subjects_lists, create_diagnosis_all_participants, obtain_global_list
 
     import pandas as pd
     import os

@@ -30,10 +30,6 @@ def run_subjects_lists(path_bids, output_path, database, subjects_list, adnimerg
 
 
     '''
-
-    from Code.subjects.subjects_lists import max_vis, create_subjects_lists, create_diagnosis_all_participants, \
-        obtain_global_list, find_parameters_statistics, obtain_lists_diagnosis, obtain_lists_diagnosis_amyloid, \
-        parameters_cn_ad_mci_amylod_M00
     import os
     import pandas as pd
 
